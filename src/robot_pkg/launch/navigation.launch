@@ -1,0 +1,15 @@
+<?xml version ="1.0"?>
+<launch>
+  <!-- Arguments -->
+  <arg name="map_file" default="$(find robot_pkg)/maps/project_map.yaml"/>
+
+  <!-- AMCL -->
+  <include file="$(find robot_pkg)/launch/amcl.launch"/>
+
+  <!-- move_base -->
+  <include file="$(find robot_pkg)/launch/move_base.launch">
+    
+  </include>
+
+ 
+</launch>
